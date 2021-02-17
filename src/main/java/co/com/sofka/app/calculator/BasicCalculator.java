@@ -27,11 +27,12 @@ public class BasicCalculator {
         Long division=0l;
         try {
             division=number1/number2;
-        }catch (Number){
-
+        }catch (ArithmeticException e){
+            logger.info("La division por cero no esta definidad: el segundo numero debe ser diferente de cero");
+            division=0l;
         }
 
-        return number1 / number2;
+        return division;
     }
 
 }
