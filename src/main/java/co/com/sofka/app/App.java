@@ -1,6 +1,7 @@
 package co.com.sofka.app;
 
-import co.com.sofka.app.calculator.BasicCalculator;
+import co.com.sofka.app.calculator.*;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
