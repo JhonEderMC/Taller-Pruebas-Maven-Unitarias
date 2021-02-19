@@ -28,7 +28,7 @@ public class App {
         Long result1 = calculator.sum(number1, number2);
         Long result2 = calculator.sub(number1, number2);
         Long result3 = calculator.mult(number1, number2);
-        Long result4 = calculator.div(number1, number2);
+        Float result4 = calculator.div(number1, number2);
 
         System.out.println(number1 + " + " + number2 + " = " + result1);
         System.out.println(number1 + " - " + number2 + " = " + result2);

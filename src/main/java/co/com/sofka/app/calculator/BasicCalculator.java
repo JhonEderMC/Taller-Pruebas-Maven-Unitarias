@@ -22,14 +22,14 @@ public class BasicCalculator {
         return number1 * number2;
     }
 
-    public Long div(Long number1, Long number2) {
+    public Float div(Long number1, Long number2) {
         logger.info( "Division {} / {}", number1, number2 );
-        Long division=0l;
+        Float division=0f;
         try {
-            division=number1/number2;
+            division=Float.valueOf(number1/number2);
         }catch (ArithmeticException e){
             logger.info("La division por cero no esta definidad: el segundo numero debe ser diferente de cero");
-            division=0l;
+            division=0f;
         }
 
         return division;
